@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Nixie One", system-ui;
+    box-sizing: border-box;
+}
+
+.to-do,
+#tasks,
+#completed {
+    box-shadow: 0 0 .2em black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+h1,
+h2 {
+    padding: 10px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#to-do input {
+    width: 50vw;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+#to-do input:focus {
+    background-color: aliceblue;
+}
+
+#to-do label {
+    font-weight: bolder;
+}
+
+#to-do button {
+    padding: 5px;
+    border-radius: 7px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+#to-do button:hover {
+    box-shadow: 0 0 .2em black;
+    transition: .2s ease;
+}
+
+#tasks div,
+#completed div {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    box-shadow: 0 0 .1em black;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#tasks div p,
+#completed div p {
+    font-weight: bold;
+    padding: 5px;
+}
+
+#tasks div button,
+#completed div button {
+    padding: 2px;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+#tasks div button:hover,
+#completed div button:hover {
+    box-shadow: 0 0 .2em black;
+    transition: .2s ease;
+}
+
+#tasks div input[type="checkbox"],
+#completed div input[type="checkbox"] {
+    cursor: pointer;
+}
